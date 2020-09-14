@@ -1,0 +1,14 @@
+import pelea.*
+
+test "obtenerLosGritosDeLosGanadoresTiene2Elementos-NoHayEmpate" {
+	assert.equals(2,pelea.gritoDeLosGanadores().size())
+}
+
+test "gananTulipanYPamela"{
+	assert.that(pelea.gritoDeLosGanadores() == ["Hora de cuidar a las plantas", "Aca Paso la Pamela"])
+}
+
+test "laEnergiaDespuesDePelearDelEquipoUnoEs13600"{
+	pelea.gritoDeLosGanadores()
+	assert.that(pelea.obtenerEnergiaDelEquipo(pelea.getEquipoUno()) == 13600)
+}
